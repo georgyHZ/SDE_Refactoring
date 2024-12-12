@@ -26,11 +26,9 @@ export default class QuizUI {
       if (this.quiz.checkAnswer(userAnswer)) {
         this.successElement.classList.remove("hidden");
         this.errorElement.classList.add("hidden");
-        console.log("Correct")
       } else {
         this.successElement.classList.add("hidden");
         this.errorElement.classList.remove("hidden");
-        console.log("Incorrect")
       }
       this.updateUI();
       this.inputAnswer.value = "";  
